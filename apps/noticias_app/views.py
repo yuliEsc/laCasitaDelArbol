@@ -11,7 +11,7 @@ from django.contrib.auth.decorators import login_required
 def proyectos(request):
     return render(request, 'proyectos.html')
 
-def donar(request):
+def donacion(request):
     return render(request, 'donacion.html')
 
 def index(request):

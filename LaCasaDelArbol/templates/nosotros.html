@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block head %}
+<title> Sobre nosotros </title>
+<link rel="stylesheet" href="{% static 'css/nosotros.css' %}">
+{% endblock %}
+{% block contenido %}
+<section class="content">
+    <h2>Nosotros</h2>
+    <div id="banner"></div>
+</section>
+
+<section class="seccion">
+    
+    <div class="filas">
+        <section class="filauno">
+            <h3>¿Quienes somos?</h3>
+            <p>La Casita del Árbol es un comedor y merendero que además conforma una familia muy numerosa.<br>
+                Aquí compartimos alegrías, conocimientos, sorpresas, risas como asi también momentos de entretenimiento Estamos comprometidos con la comunidad a lograr mejorar la calidad de vida de muchos jovenes.
+            </p>
+        </section>
+        <section class="filadue">
+            <div class="mision">
+            <div id="mis"></div>
+            <div class="mistxt">
+                <h3>Misión</h3>
+                <p>Brindar recursos a comunidades vulnerables para lograr mejorar la calidad de vida de los jovenes y fortalecer su desarrollo.</p>
+            </div>    
+            </div>
+            <div class="vision">
+                <div id="vis"></div>
+                <div class="vistxt">
+                    <h3>Visión</h3>
+                <p>Ser una organización reconocida en la ciudad por el alcance de nuestras acciones y su impacto positivo.</p>
+                </div>            
+            </div>
+        </section>
+        <section class="filatre">
+            <h3>Nuestra historia</h3>
+            <p>En el año 2017 en vista de la gran necesidad que se percibía en el barrio, tomamos la iniciativa de servirles la merienda a los chicos que residian allí en ese entonces.<br>
+                Comenzamos sirviendo la merienda una vez a la semana en el que participaban alrededor de 30 niños del barrio,  cantidad que fue aumentando con el pasar del tiempo lo que nos llevó a aumentar la cantidad de dias de merienda.<br>
+                Hoy en día servimos almuerzo y merienda de lunes a sábados a mas de 60 jovenes de la comunidad.</p>
+        </section>
+    </div>
+    <aside>
+        <div class="anundon">
+            <div class="txtdon">
+                <div id="cora"></div>
+                <h5>Con tu donación, nos ayudarás a beneficiar a más jovenes.</h5>
+            </div>                
+            <div class="don2"><a href="{% url 'donar' %}"><button class="don">Donar</button></a></div>
+        </div>
+        <div id="chicos"></div>
+    </aside>
+</section>
+
+{% endblock %}

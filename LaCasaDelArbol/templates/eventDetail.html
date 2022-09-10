@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+    <section>
+      <article class="Noticia">
+        <h1 class="Titulo">{{ evento.nombre }}</h1>
+        <div class="Contexto">
+          <div class="GenericoPlantilla">
+            <div class="GenericoPlantilla-img">
+              <div class="Card-Events-img">
+                <img src="{{MEDIA_URL}}/{{evento.img}}" alt="{{ evento.nombre }}">
+              </div>
+              <div>
+                <h6>Creado: {{ evento.creado }}</h6>
+                <h6>Autor: {{ evento.organizador }}</h6>
+              </div>
+            </div>
+            <div class="GenericoPlantilla-text">
+              <p> {{evento.descripcion}}</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    {% endblock %}

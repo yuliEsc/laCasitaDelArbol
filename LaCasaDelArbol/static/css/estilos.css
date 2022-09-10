@@ -1,0 +1,364 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+  
+/*Banner inicio*/
+
+
+.banner{
+    padding: 0px 56px;
+    width: 100vw;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(180deg, #ffee2e6c -18.47%, rgba(255, 255, 255, .2) 100%),url(../media/imgbanner.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/*Contenido del medio*/
+
+.content{
+    width: 100vw;
+    height: 67vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.imguno{
+    background-image: url(../media/imguno.png);
+    
+}
+
+.imgdue{
+    background-image: url(../media/imgdue.png);
+}
+
+.imgtre{
+    background-image: url(../media/imgtre.png);
+}
+
+.imgdue, .imgtre, .imguno{
+    background-size: cover;
+    background-position: center center;
+    height: 8vw;
+    width: 11vw;
+    border-radius: 5px;
+}
+.gtext{
+    margin:16px 16px 0 20px;
+    color: #515151;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gtext h3{
+    color: #F98012;
+    font-weight: 800;
+    font-size: 1.5vw;
+}
+.gtext h5{
+    font-weight: 500;
+    font-size: 1.2vw;
+    width: 10.5em;
+    margin: 16px 0px;
+}
+
+.grup{
+    width: 58vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grupsub{
+    padding: 0px 10vw;
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.btnlm{
+    width: 6vw;
+    height: 2vw;
+    border: none;
+    background: #F98012;
+    border-radius: 1089px;
+    font-weight: 700;
+    font-size: 1vw;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.btnlm:hover{
+    background-color: #e0720a;
+}
+
+/*Izquierda*/
+
+.izquierda{
+    padding-top: 10px;
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactobnr{
+    display: flex;
+    flex-direction: column;
+    background: rgba(33, 34, 28, 0.05);;
+    border-radius: 22px;
+    height: 30%;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.gcnt{
+    display: flex;
+    align-items: center;
+}
+.contactobnr h4 {
+font-weight: 700;
+font-size: 1em;
+color: #525252;
+}
+.contactobnr h5{
+    margin-left:8px ;
+    font-weight: 600;
+font-size: .5em;
+color: #525252;
+}
+.contactobnr h6{
+    margin-left: 7px;
+    font-weight: 500;
+    font-size: .5em;
+    color: #525252;
+}
+.imgchicos{ 
+    border-radius: 22px;
+    height: 69%;
+    margin-top: 7px;
+    background-image:url(../media/collag.png) ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/*Derecha*/
+.derecha{
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between; 
+    height: 100%;
+    padding: 10px 0px;
+}
+
+.ubi{
+    width: 14.8vw;
+    display: flex;
+    justify-content: center;
+}
+
+#ubi{
+    width: 5vw;
+    background-image: url(../media/Ubicacion.svg);
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+#map{
+    border-radius:20px ;
+    height: 14vh;
+    margin: 11px 0 0 0;
+    background-image: url(../media/Mapsicle.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.arriba{
+    padding: 10px;
+    background: rgba(33, 34, 28, 0.05);
+    border-radius:22px ;
+}
+
+
+.ubi h4{
+    padding-left: .2em;
+    font-weight: 600;
+    font-size: 1.6vw;
+    color: #525252;
+}
+
+.ubi h5{
+    padding-left: .6em;
+    font-weight: 500;
+    font-size: .5em;
+    color: #747474;
+}
+
+#cora{
+    height: 2.3vw;
+    background-image: url(../media/Cora.svg);
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.anundon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 10px;
+    height: 56%;
+    margin-top: 10px;
+    background:rgba(33, 34, 28, 0.05);
+    border-radius: 22px;
+}
+.txtdon{
+    height: 87%;
+    flex-direction: column;
+    width: 14vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.txtdon h5{
+    margin: 5px 0;
+    font-weight: 600;
+font-size: 1.2em;
+color: #F98012;
+}
+.donmin{
+    width: 66px;
+    height: 24px;
+    border: none;
+    background: #F98012;
+    border-radius: 1089px;
+    font-weight: 700;
+    font-size: .8em;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.donmin:hover{
+    background-color: #db7312;
+}
+.don2{
+display: flex;
+justify-content: center;
+}
+
+.bajomob{
+    display: none;
+}
+@media (max-width:1000px){
+    .txtdon h5{
+        font-size: 1em;
+    }
+    .banner{
+        font-size: .9em;
+    }
+
+}
+
+@media (max-width:800px){
+    .content{
+        flex-direction: column;
+        height: 100%;
+    }
+    .grup{
+        width: 100vw;
+        justify-content: space-evenly;
+        margin: 30px 0;
+    }
+    .imgdue, .imgtre, .imguno{
+        height: 12vw;
+        width:15vw;
+    }
+    .gtext{
+        font-size: 1em;
+    }
+    .gtext h3{
+        font-size: 1em;
+
+    }
+    .gtext h5{
+        font-size: .8em;
+    }
+    .btnlm{
+        width: 50px;
+        height: 20px;
+        font-size: .5em;
+        font-weight: .5em;
+    }
+    .izquierda{
+        display: none;
+    }
+    .bajomob{
+        width:60%;
+        display: inline;
+    }
+    .derecha{
+        width: 60%;
+    }
+    #map{
+        height: 30vh;
+    }
+    .anundon{
+        height:100%;
+    }
+    .txtdon{
+        height: 90%;
+        width: 100%;
+    }
+    .ubi{
+        width: 100%;
+    }
+    #ubi{
+        width: 50px;
+    }
+    .ubi h4{
+        font-size: 1.5em;
+    }
+    .ubi h5{
+        font-size: .8em;
+    }
+    #cora{
+        height: 20px;
+    }
+    .gcnt h5, .gcnt h6 {
+        font-size: .7em;
+        color: #525252;
+    }
+    
+    
+}
+
+@media (max-width:600px){
+    .grup{
+        width: 80%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .grupsub{
+        font-size: 1.3em;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .imgdue, .imgtre, .imguno{
+        height: 22vw;
+        width: 34vw;
+    }
+}

@@ -1,0 +1,513 @@
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+   }
+
+body{
+    height: 100vh ;  
+}
+
+
+.content{
+    height: 12vh;
+    background: linear-gradient(180deg, #FF983A 0%, #FFAB2E 0.01%, #E98021 100%);    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner{
+    width: 40vw;
+    height: 100%;
+    background-image: url(../media/pngwin.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    mix-blend-mode: soft-light;
+}
+
+.content h2{
+    font-weight: 800;
+    font-size: 2.8em;
+    line-height: 116.5%;
+    color: #fafafa;
+    padding-top: .8vw;
+    padding-left: 3.6vw;
+}
+.container{
+    
+    padding: 24px 50px;
+    
+}
+
+.filauno {
+    width: 100%;
+   
+}
+
+.col-4 {
+    font-size: .9em;
+    color: #f98012;
+    margin-right: 60px;
+    width: 60%;
+}
+
+.col-8 {
+    font-size: 1em;
+}
+
+.row.align-items-start {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+
+}
+
+.col-3.p-3.border.rounded-3 {
+    
+    height: 100%;
+    width: 18vw;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #313131;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    margin: 10px;
+    color: #f98012;
+}
+
+.uno{
+    background-image: url(../media/huerta1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.dos{
+    background-image: url(../media/hockey.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.tres{
+    background-image: url(../media/clases.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.cuatro{
+    background-image: url(../media/tapitas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.uno,.dos,.tres,.cuatro{
+    height: 6vw;
+    width: 10vw;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 500px){
+    .col-4 {
+        font-size: .9em;
+        color: #f98012;
+        margin-right: 60px;
+        width: 60%;
+    }
+    
+    .col-8 {
+        font-size: 1em;
+    }
+
+    .filauno {
+        width: 100%;
+        display: block;
+    }
+    .row.align-items-start {
+        display: block;
+        padding: 20px;
+        justify-content: space-between;
+    
+    }
+
+    .col-3.p-3.border.rounded-3 {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        border: solid 2px black;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+     }
+    h2{
+        margin: 10px;
+        color: #f98012;
+        font-size: small;
+    }
+
+    .uno, .dos, .tres, .cuatro {
+        height: 31vw;
+        width: 50vw;
+        border-radius: 10px;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .col-4 {
+        font-size: .9em;
+        color: #f98012;
+        margin-right: 60px;
+        width: 60%;
+    }
+    
+    .col-8 {
+        font-size: 1em;
+    }
+
+    .filauno {
+        width: 100%;
+        display: block;
+    }
+    .row.align-items-start {
+        display: block;
+        padding: 20px;
+        justify-content: space-between;
+    
+    }
+
+    .col-3.p-3.border.rounded-3 {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        border: solid 2px black;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+     }
+    h2{
+        margin: 10px;
+        color: #f98012;
+        font-size: small;
+    }
+
+    .uno, .dos, .tres, .cuatro {
+        height: 31vw;
+        width: 50vw;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .col-4 {
+        font-size: .9em;
+        color: #f98012;
+        margin-right: 60px;
+        width: 60%;
+    }
+    
+    .col-8 {
+        font-size: 1em;
+    }
+
+    .filauno {
+        width: 100%;
+        display: block;
+    }
+    .row.align-items-start {
+        display: block;
+        padding: 20px;
+        justify-content: space-between;
+    
+    }
+
+    .col-3.p-3.border.rounded-3 {
+    height: 100%;
+    width: 30vh;
+    text-align: center;
+    padding: 15px;
+    border: solid 1px #313131;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+     }
+    h2{
+        margin: 10px;
+        color: #f98012;
+        font-size: small;
+    }
+
+    .uno, .dos, .tres, .cuatro {
+        height: 31vw;
+        width: 50vw;
+        border-radius: 10px;
+    }
+=======
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height:100vh ;  
+}
+
+
+.content{
+    height: 13%;
+    background: linear-gradient(180deg, #FF983A 0%, #FFAB2E 0.01%, #E98021 100%);    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner{
+    width: 40vw;
+    height: 100%;
+    background-image: url(/Imagenes/manos.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    mix-blend-mode: soft-light;
+}
+
+.content h2{
+    font-weight: 800;
+    font-size: 2.8em;
+    line-height: 116.5%;
+    color: #fafafa;
+    padding-top: .8vw;
+    padding-left: 3.6vw;
+}
+.container{
+    width: 100vw;
+    padding: 24px 50px
+}
+
+.filauno {
+    width: 100%;
+   
+}
+
+.col-4 {
+    font-size: .9em;
+    color: #f98012;
+    margin-right: 60px;
+    width: 60%;
+}
+
+.col-8 {
+    font-size: 1em;
+}
+
+.row.align-items-start {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+
+}
+
+.col-3.p-3.border.rounded-3 {
+    
+    height: 100%;
+    width: 18vw;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #313131;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    margin: 10px;
+    color: #f98012;
+}
+
+.uno{
+    background-image: url(/media/huerta1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.dos{
+    background-image: url(/media/hockey.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.tres{
+    background-image: url(/media/clases.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.cuatro{
+    background-image: url(/media/tapitas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.uno,.dos,.tres,.cuatro{
+    height: 6vw;
+    width: 10vw;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 500px){
+    .col-4 {
+        font-size: .9em;
+        color: #f98012;
+        margin-right: 60px;
+        width: 60%;
+    }
+    
+    .col-8 {
+        font-size: 1em;
+    }
+
+    .filauno {
+        width: 100%;
+        display: block;
+    }
+    .row.align-items-start {
+        display: block;
+        padding: 20px;
+        justify-content: space-between;
+    
+    }
+
+    .col-3.p-3.border.rounded-3 {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        border: solid 2px black;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+     }
+    h2{
+        margin: 10px;
+        color: #f98012;
+        font-size: small;
+    }
+
+    .uno, .dos, .tres, .cuatro {
+        height: 31vw;
+        width: 50vw;
+        border-radius: 10px;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .col-4 {
+        font-size: .9em;
+        color: #f98012;
+        margin-right: 60px;
+        width: 60%;
+    }
+    
+    .col-8 {
+        font-size: 1em;
+    }
+
+    .filauno {
+        width: 100%;
+        display: block;
+    }
+    .row.align-items-start {
+        display: block;
+        padding: 20px;
+        justify-content: space-between;
+    
+    }
+
+    .col-3.p-3.border.rounded-3 {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        border: solid 2px black;
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+     }
+    h2{
+        margin: 10px;
+        color: #f98012;
+        font-size: small;
+    }
+
+    .uno, .dos, .tres, .cuatro {
+        height: 31vw;
+        width: 50vw;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .col-4 {
+        font-size: .9em;
+        color: #f98012;
+        margin-right: 60px;
+        width: 60%;
+    }
+    
+    .col-8 {
+        font-size: 1em;
+    }
+
+    .filauno {
+        width: 100%;
+        display: block;
+    }
+    .row.align-items-start {
+        display: block;
+        padding: 20px;
+        justify-content: space-between;
+    
+    }
+
+    .col-3.p-3.border.rounded-3 {
+    height: 100%;
+    width: 30vh;
+    text-align: center;
+    padding: 15px;
+    border: solid 1px #313131;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+     }
+    h2{
+        margin: 10px;
+        color: #f98012;
+        font-size: small;
+    }
+
+    .uno, .dos, .tres, .cuatro {
+        height: 31vw;
+        width: 50vw;
+        border-radius: 10px;
+    }
+
+}

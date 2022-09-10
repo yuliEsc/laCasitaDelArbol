@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %} 
+<title>Contactos</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/contacto1.css' %}">        
+{% endblock %}
+
+{% block contenido %}
+  <section class="content">
+    <h2>Contactanos</h2>
+    <div id="banner"></div>
+</section>
+       
+    <section class="cuerpo">
+        <div class="form-flex">
+            <h2 >Ponte en contacto con nosotros</h2>
+            <br></br>
+            <div class="contenedorFormulario">
+                                    
+                {% if "valido" in request.GET %}
+                
+                <p style= "color: black";> Información enviada con exito,gracias por comunicarte</p>
+
+            
+                {% endif %}
+                
+                <br></br>
+                <form action="" method= "POST"  style="text-align:center;">
+                        {% csrf_token %}
+
+                        <table style: color: black; margin:20px;auto;>{{formulario.as_table}} </table>                
+                        <br></br>
+                        <input type="submit" value="Enviar" style="width:100px;">
+                        <br></br>
+                </form>
+                <br></br>
+            </div>  
+            
+        </div>
+        <div class="medios">
+            <br><br>
+            <h3>Por los medios de contactos:</h3><br>
+            <ul>
+                <li><a class="enlace" href="https://www.facebook.com/La-Casita-Del-Arbol-Ayala-490299887977840/"><br>
+                “La Casita del Árbol Ayala”</a></li><br><br><br>
+                <li>ernestoayala444@gmail.com</li><br><br><br>
+                <li>Barrio 29 de agosto,Resistencia, Chaco</li>
+            </ul>
+        </div>
+    </section>
+
+
+        
+
+
+{% endblock %}
+
+
+    

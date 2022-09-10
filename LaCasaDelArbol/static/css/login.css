@@ -1,0 +1,71 @@
+main{
+    background-image: url(../media/collag.png);
+    background-size: contain;
+    background-position: center center;
+    mix-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    height: 81vh;
+    align-items: center;
+}
+article {
+    padding: 20px;
+      width:54vw;
+      border:1px solid #ccc;
+      border-radius:10px;
+      background:white;
+  box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  height: fit-content;
+  }
+.regin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.regin p{
+    margin-right: 10px;
+}
+.log{
+    background: white;
+    padding: 8px 16px;
+    margin: 8px 0;
+    border: 2px solid #f98012;
+    cursor: pointer;
+      font-size:12px;
+      border-radius:10px;
+    margin-left: 10px;
+}
+.log :hover{
+    opacity: 0.9;!important
+}
+h1{
+    margin-bottom: 10px;
+}
+p input{
+  width: 100%;
+  padding: 11px;
+  margin: 2px 0 12px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+}
+.post {
+    background-color: #f98012;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+      font-size:16px;
+      border-radius:10px;
+  }
+  button:hover {
+    opacity:1;
+  }
+
+  .Despedida{
+    width: 60px;
+    height: 60px;
+  }

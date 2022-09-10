@@ -1,0 +1,321 @@
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+}
+.content{
+    height: 13%;
+    background: linear-gradient(180deg,#FF983A 0%,#FFAB2E 0.01%,#E98021 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner{
+    width: 40vw;
+    height: 12vh;
+    background-image: url(../media/pngwin.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    mix-blend-mode: soft-light;
+}
+.prueba{
+    width: 100%;
+    height: 74%;
+    background-image: url(../media/pngwin.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 10px;
+    mix-blend-mode: hard-light;
+}
+.content h2{
+    font-weight: 800;
+    font-size: 2.8em;
+    line-height: 116.5%;
+    color: #fafafa;
+    padding-top: .8vw;
+    padding-left: 3.6vw;
+}
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 70%;
+    margin: 40px 10px;
+    justify-content: space-between;
+}
+
+
+
+.noticia{
+    border: 1px solid black;
+    background-color: white;
+    color:#F98012;
+    width: 240px; 
+    height: 350px;
+    text-align: center;
+    border-radius: 9%;
+    box-shadow: 10px 8px #3131317a;
+}
+.botton{
+    border-radius: 26px;
+    border: solid;
+    cursor: pointer;
+    background-color: #fafafa;
+    color: #F98012;
+    padding: 10px;
+}
+
+.container-proyecto{
+    height: 40vh;
+    text-align: center;
+    background: linear-gradient(180deg,#FF983A 0%,#FFAB2E 0.01%,#E98021 100%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;
+
+
+}
+.proyecto{
+    font-size: 2.4em;
+    line-height: 116.5%;
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: 700;
+}
+.container-donacion h2{
+    font-size: 2.8em;
+    line-height: 116.5%;
+    color: #fafafa;
+}
+.container-donacion{
+    border: 1px solid black;
+    margin: 10px;
+    height: 120px;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(180deg,#FF983A 0%,#FFAB2E 0.01%,#E98021 100%);
+}
+.cuerpo{
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+
+/* .card-header > img{
+    width: 100%;
+    height:100%;
+    margin: 4px;
+    border-radius: 10px;
+}
+h3{
+    margin: 20px;
+} */
+
+.media{
+    width: 64px;
+    display: flex;
+}
+/** Donar **/
+#cora{
+    height: 27px;
+    width: 24px;
+    background-image: url(../media/cora.svg);
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.anundon{
+    padding: 10px;
+    display: flex;
+    height: 20.5vh;
+    margin-top: 9%;
+    background: rgba(33, 34, 28, 0.05);;
+    border-radius: 22px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.txtdon{
+    display: flex;
+    flex-direction: column;
+    margin: 0 14px;
+    width: 14vw;
+}
+.txtdon h5{
+    width: 94%;
+    font-weight: 800;
+    font-size: .9em;
+    color: #313131;
+}
+.donmin{
+    width: 5vw;
+    height: 2.2vw;
+    border: none;
+    background: #F98012;
+    border-radius: 1089px;
+    font-weight: 700;
+    font-size: 1.1vw;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.donmin:hover{
+    background-color: #df7411;
+}
+.don2{
+display: flex;
+justify-content: center;
+}
+@media (max-width:1000px){
+    .logotype{
+        width: 44%;
+        font-size: 1em;
+    }
+    
+    .logydon{
+        width: 100px;
+    }
+    .don{
+    font-size: 0.9em;
+    padding: 7px 12px;
+    border-radius: 1994px;
+    color: white;
+    border: none;
+    background: #F98012;
+    }
+}
+@media screen and (max-width: 900px){
+        .logydondos{
+            align-items: center;
+            justify-content: space-around;
+            width: 166px;
+            display: flex;
+            margin: 10px;
+        }
+    }
+    /** Termina Donar**/
+/** TARJETA YULI **/
+    :root{
+        --color-text: #616161;
+        --color-text-btn: #ffffff;
+        --card1-gradient-color1: #4e4e4e2a;
+        --card1-gradient-color2: #f98212b2;
+    }
+    .gruponot{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 12px;
+    }
+    .card-wrap{
+        width: 220px;
+        background: #fff;
+        border-radius: 20px;
+        border: 5px solid #fff;
+        overflow: hidden;
+        color: var(--color-text);
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+                    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+    .card-wrap:hover{
+        transform: scale(1.1);
+    }
+    .card-header{
+        height: 200px;
+        width: 100%;
+        border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
+        display: grid;
+        place-items: center;
+    }
+    .card-header i{
+        color: #fff;
+        font-size: 72px;
+    }
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .card-title{
+        text-align: center;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        
+    }
+    .card-text{
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .card-btn{
+        border: none;
+        border-radius: 100px;
+        padding: 5px 30px;
+        color: #fff;
+        margin-bottom: 15px;
+        font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(180deg, #FF983A 0%, #FFAB2E 0.01%, #E98021 100%);
+    }
+    .card-btn:hover{
+        color: #fff;
+    background: linear-gradient(180deg, #FF983A 0%, #FFAB2E 0.01%, #ce7425 100%)
+    }
+/** TERMINA ACA **/
+.yuli{
+justify-content: space-between;
+}
+
+.fil {
+    position: absolute;
+    width: 135px;
+    background: #fafafa;
+    margin: 0px 0px 0px 40px;
+    border-radius: 40px;
+}
+  
+#span {
+    border-radius: 53px;
+    padding: 10px 20px;
+    background: #F98012;
+    color: white;
+    font-size: .8em;
+    cursor: pointer;
+    display: block;
+}
+  
+span::after {
+    float: right;
+    right: 10%;
+    content: "+";
+  }
+  
+.slide {
+    clear:both;
+    width:100%;
+    height:0px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+.slide li {padding : 12px; font-size: .9em; margin: 0;}
+
+
+  
+#touch {position: absolute; opacity: 0; height: 0px;}    
+#touch:checked + .slide {height: auto;}

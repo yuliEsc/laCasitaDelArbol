@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block head %} 
+<title>Registrarte</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/registro.css' %}">        
+{% endblock %}
+{% block contenido %}
+<section>
+<article>
+	<form class="reg" method="post">
+		<h1>Registrarte</h1>
+		{% csrf_token %}
+		{{ form.as_p }}
+		<button type="submit" class="post" id="" >Registrarse</button>
+	</form>
+	<div class="regin">
+		<p>¿Ya tienes una cuenta?</p><a href="{% url 'login' %}"><button class="log">Iniciar sesión</button></a>
+	</div>
+	
+</article>
+</section>
+{% endblock %}

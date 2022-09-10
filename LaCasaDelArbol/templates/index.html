@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %} 
+<title>Inicio | La Casita del árbol</title>
+<link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+{% endblock %}
+
+{% block contenido %}
+
+    
+<!--Banner-->
+    <section class="banner">
+        <h2>Llevando bienestar a los niños de nuestra comunidad</h2>
+    </section>
+
+<!--Contenido-->
+    <section class="content">
+        <aside class="izquierda">
+            <div class="contactobnr">
+                <h4>Contacto</h4>
+                <div class="gcnt"><img src="{% static 'media/facebook.svg' %}" alt=""><h5>"La casita del Árbol Ayala"</h5></div>
+                <div class="gcnt"><img src="{% static 'media/correo.svg' %}" alt=""><h6>ernestoayala444@gmail.com</h6></div>
+            </div>
+            <div class="imgchicos"></div>
+        </aside>
+        
+            <section class="grup">
+                <div class="grupsub">
+                    <div class="imguno"></div>
+                    <div class="gtext">
+                        <h3>¿Quienes Somos?</h3>
+                        <h5>Comprometidos con el bienestar y buen desarrollo de los niños.</h5>            
+                        <a href="{% url 'nosotros' %}"><button class="btnlm">Leer más</button></a>
+                    </div>
+                </div>
+                <div class="grupsub">
+                    <div class="imgdue"></div>
+                    <div class="gtext">
+                        <h3>Nuestros proyectos</h3>
+                        <h5>Los niños son el futuro y son quienes estan expuestos a la realidad que hoy nos rodea.</h5>
+                        <a href="{% url 'proyectos' %}"><button class="btnlm">Leer más</button></a>
+                    </div>
+                </div>
+                <div class="grupsub">
+                    <div class="imgtre"></div>
+                    <div class="gtext">
+                        <h3>Ultimos eventos</h3>
+                        <h5>Entérate sobre lo que hacemos y los próximos eventos programados.</h5> 
+                        <a href="{% url 'notices' %}"><button class="btnlm">Leer más</button></a>
+                    </div>
+                </div>
+            </section>
+        
+        <aside class="derecha">
+            <div class="arriba">
+                <div class="ubi">
+                    <div id="ubi"></div>
+                    <div><h4>Ubicación</h4><h5>Barrio 29 de agosto, Resistencia, Chaco, Argentina.</h5></div>
+                </div>                
+
+                <div id="map"></div>
+            </div>
+            <div class="anundon">
+                <div class="txtdon">
+                    <div id="cora"></div>
+                    <h5>Con tu donación, nos ayudarás a beneficiar a más jovenes.</h5>
+                </div>                
+                <a href="{% url 'donar' %}" class="don2"><button class="donmin">Donar</button></a>
+            </div>
+        </aside>
+        <aside class="izquierda bajomob">
+            <div class="contactobnr">
+                <h4>Contacto</h4>
+                <div class="gcnt"><img src="{% static 'media/facebook.svg' %}" alt=""><h5>"La casita del Árbol Ayala"</h5></div>
+                <div class="gcnt"><img src="{% static 'media/correo.svg' %}" alt=""><h6>ernestoayala444@gmail.com</h6></div>
+            </div>
+            <div class="imgchicos"></div>
+        </aside>
+    </section>
+
+  {% endblock %}

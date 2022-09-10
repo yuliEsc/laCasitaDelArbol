@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link href="{% static 'css/proyecto.css' %}" rel="stylesheet">
+    <title>Proyectos</title>
+{% endblock %}
+{% block contenido %}
+
+    <section class="content">
+      <h2>Proyectos</h2>
+      <div id="banner"></div>
+    </section>
+    <section class="container">
+      <div class="row filauno align-items-start">
+        <div class="col-4 ">
+        <h1>Creando condiciones de vida positivas para los niños.</h1>
+        </div>
+        <div class="col-8">
+        <p>Tenemos muy en claro que los niños son el futuro y son quienes estan expuestos a la realidad que hoy nos rodea.<br>La falta de oportunidades, la falta de acompañamiento, en muchos casos, de sus propias familias, pueden afectarlos y llevarlos a un consumo problemático por la situación de vulnerabilidad en la que viven. Es necesario brindarle posibilidades para lograr una estabilidad emocional, afectiva y social como es el compartir con sus pares una mesa o un juego.</p>
+        </div>
+      </div>
+
+      <div class="row filados align-items-start">
+        <div class="col-3  p-3 border rounded-3">
+        <div class="img uno"></div>
+          <h2>Manos a la Huerta</h2>
+          <p>Hoy día nuestra huerta nos posibilita muchas cosas. De alli sacamos verduras para las comidas y nos conforta saber que fue producido por y para los niños.</p>
+          </div>
+        <div class="col-3  p-3 border rounded-3">
+          <div class="img dos"></div>
+          <h2>Clases de Hockey</h2>
+          <p>El deporte es el mejor medio inclusivo y gracias a los profesores que dictan las clases se pudo implementar. Los chicos ahora esperan con ansias el dia de la clase o los encuentros deportivos que tenemos la dicha de llevarlos a competir.</p>
+        </div>
+        <div class="col-3  p-3 border rounded-3">
+          <div class="img tres"></div>
+          <h2>Apoyo Escolar</h2>
+          <p>El momento antes de la merienda es dedicado al estudio. La educación aparece entre risas y juegos, intentando reforzar el aprendizaje en ellos.
+          </p>
+        </div>
+        <div class="col-3  p-3 border rounded-3">
+            <div class="img cuatro"></div>
+            <h2> Recicla </h2>
+            <p>A traves de este proyecto estamos reciclando tapitas, latas y botellas.</p>
+            
+        </div>
+      </div>
+    </section>
+    {%endblock %}

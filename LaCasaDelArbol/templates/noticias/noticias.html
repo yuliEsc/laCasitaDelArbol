@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% base head %}
+<title>Novedades</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/notice1.css' %}">  
+{% endblock %}
+{% block contenido %}
+    <section class="content">
+      <h2>Noticias</h2>
+      <div class="banner"></div>
+    </section>
+    <div class="cuerpo">
+      {% for noticia in noticias %}
+      <section class="flex-container">
+        <section class="gruponot">
+          <div class="card-wrap">
+            <div class="card-header one">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="card-content">
+              <h1 class="card-title">{{noticia.titulo}}</h1>
+              <a href="{% url 'noticiasdetalle' id=noticia.id %}">
+                <button class="card-btn one">Leer mas</button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="gruponot">
+          <div class="card-wrap">
+            <div class="card-header two">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="card-content">
+              <h1 class="card-title">Pedaleada Solidaria</h1>
+              <a href="#">
+                <button class="card-btn one">Leer mas</button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="gruponot">
+          <div class="card-wrap">
+            <div class="card-header three">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="card-content">
+              <h1 class="card-title">Un Padrino</h1>
+              <a href="#">
+                <button class="card-btn one">Leer mas</button>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="gruponot">
+          <div class="card-wrap">
+            <div class="card-header four">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="card-content">
+              <h1 class="card-title">Venta de Locro</h1>
+              <a href="#">
+                <button class="card-btn one">Leer mas</button>
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="yuli">
+        <div  class="container-proyecto">
+          <a href="#" class="proyecto">Proyectos</a>
+          <div class="prueba"></div>
+        </div>
+        <div class="anundon">
+          <div class="txtdon">
+            <div id="cora"></div>
+            <h5>Con tu donación, nos ayudarás a beneficiar a más jovenes.</h5>
+          </div>
+          <div class="don2"><a href="#"><button  class="donmin">Donar</button></a></div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+{% endblock %}

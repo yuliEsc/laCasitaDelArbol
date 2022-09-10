@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<title>{{ noticia.titulo}}</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">  
+{% endblock %}
+{% block contenido %}
+    <div class="container-notice">
+      <section class="container-titulo">
+        <h1>{{ noticia.titulo}}</h1>
+        <span>{{ noticia.creado }}</span>
+      </section>
+      <section class="container-cuerpo">
+        <p>
+          {{ noticia.contenido|safe|linebreaksbr}}
+        </p>
+      </section>
+      <section class="container-img">
+        <div>
+          <img
+            class="img"
+            src="{{MEDIA_ROOT}}/{{noticia.img}}"
+            alt="{{ noticia.nombre }}"
+          />
+        </div>
+      </section>
+      <article class="Comentarios">
+        
+        {% if user.is_authenticated %}
+        <form method="POST">
+          {% csrf_token %}
+          {{form.as_p}}
+          <button type="submit" class="btn_comentar">
+            Comentar
+          </button>
+        </form>
+        {% else %}
+        <div class="Comentario">
+          <p>
+            <a href="/login" class="Titulo">Inicia sesion para comentar</a>
+          </p>
+        </div> 
+      </article>
+        {% endif %}
+      <section>
+        {% for comentario in comentarios %}
+        <div class="Comentario">
+          <h6 class="comentario-header">{{ comentario.autor}}<span class="Fecha"> {{ comentario.creado}}</span></h6>
+          <p>{{ comentario.cuerpo_comentario}}</p>
+        </div>
+        {% endfor %}
+      </section>
+    </div>
+  </body>
+{% endblock %}

@@ -1,0 +1,69 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height:100vh ;  
+}
+
+
+.content{
+    height: 13%;
+    background: linear-gradient(180deg, #FF983A 0%, #FFAB2E 0.01%, #E98021 100%);    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner{
+    width: 40vw;
+    height: 100%;
+    background-image: url(../media/manos.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    mix-blend-mode: soft-light;
+}
+
+.content h2{
+    font-weight: 800;
+    font-size: 2.8em;
+    line-height: 116.5%;
+    color: #fafafa;
+    padding-top: .8vw;
+    padding-left: 3.6vw;
+}
+.container{
+    width: 100vw;
+    height: 68vh;
+    
+    padding: 24px 50px
+}
+
+.filauno {
+    width: 100%;
+   
+}
+
+.col-4 {
+    font-size: .9em;
+    color: coral;
+    margin-right: 60px;
+    width: 60%;
+}
+
+.col-8 {
+    font-size: 1em;
+}
+
+.row.align-items-start {
+    display: flex;
+    padding: 20px
+
+}
+
+
+
+

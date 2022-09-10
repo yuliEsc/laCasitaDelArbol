@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block head %}
+<link href="{% static 'css/login.css' %}" rel="stylesheet">
+<title>Iniciar Sesión</title>
+{% endblock %}
+{% block contenido %}
+<section>
+	<article>
+		<img  class="Despedida" src="{% static 'media/Logo.png' %}" alt="logo" />
+		<form method="post">
+			<h1 class='subTitulo'>Iniciar sesion</h1>
+			{% csrf_token %}
+			{{ form.as_p }}
+			<button type="submit" class="post" id="" >Iniciar sesion</button>
+		</form>
+		<div class="regin">
+			<p>¿No tienes una cuenta?</p><a href="{% url 'registro' %}"><button class="log">Crear Cuenta</button></a>
+		</div>
+	</article>
+</section>
+{% endblock %}

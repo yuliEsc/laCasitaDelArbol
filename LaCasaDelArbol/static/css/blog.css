@@ -1,0 +1,114 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 81vh;
+    line-height: none;
+}
+.container-cuerpo p{
+    margin: 10px;
+}
+.container-titulo{
+    border-color: black;
+    margin-left: 15px;
+    
+}
+.container-notice{
+    background: #fdfdfd;
+    margin-left: 5px;
+    padding: 30px 40px;
+}
+.container-titulo h1{
+    color:#f98012;
+margin:0;
+font-weight: 700;    
+font-size: 2.2em;
+/* text-shadow: rgb(0 0 0 / 5%) 0px 10px 20px, rgb(0 0 0 / 20%) 0px 1px 1px; */
+}
+.container-titulo span{
+    font-size: 12px
+}
+
+h5{
+    font-size: 20px;
+    margin: 3px
+}
+.img{
+    width: 400px;
+    height: 320px;
+    margin: 30px;
+    border-radius: 3%;
+    box-shadow: rgba(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+}
+.container-img{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+.col-comentario{
+    margin: 20px ;
+}
+.form-comentarios textarea{
+    width: 25%;
+    height: 20px;
+    max-width:  25%;
+    min-width: 25%;
+    min-height: 100px;
+    max-height: 100px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+    border:1px solid #4b65d1;
+    margin-bottom: 20px;
+}
+.form-comentarios .btn{
+    background: #4b65d1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 0;
+    color:white;
+    margin-bottom: 20px;
+}
+.form-comentarios .btn:hover{
+    box-shadow: 0px 0px 9px rgba(0,0, 0,.35);
+}
+
+form>p {
+    display: flex;
+    flex-direction: column;
+}
+p label {
+        font-size: 1.2em;
+    }
+    .comentario-header {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .Comentario>p {
+        font-size: 1.1em;
+    }
+    .Comentario {
+        margin: 18px;
+    }
+
+#id_cuerpo_comentario {
+    height: 10vh;
+    width: 30vw;
+    border-radius: 20px;
+    border: solid 2px #a3a3a3;
+    /* border: solid; */
+    margin-top: 10px;
+}
+
+.btn_comentar {
+    width: 30vw;
+    border-radius: 20px;
+    border: solid;
+    cursor: pointer;
+    background-color: #f98012;
+    color: #fafafa;
+    margin-top: 12px;
+    padding: 10px 12px;
+}

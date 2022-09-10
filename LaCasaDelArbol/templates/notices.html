@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %} 
+{% block head %}
+<title>Novedades</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/notice1.css' %}">  
+{% endblock %}
+{% block contenido %}
+    <section class="content">
+      <h2>Noticias</h2>
+      <div class="banner"></div>
+    </section>
+    <div class="cuerpo">
+      <nav class="fil">
+        <label for="touch"><span id="span">Categorias</span></label>               
+        <input type="checkbox" id="touch"> 
+      
+        <ul class="slide">
+          {% for categoria  in categorias  %}
+          <li><a href="/categoria/{{categoria.id}}">{{categoria.nombre}}</a></li> 
+          {% endfor %}
+        </ul>
+      </nav>
+      <section class="flex-container">
+        
+        {% for noticia in noticias %}
+        <section class="gruponot">
+          <div class="card-wrap">
+            <div class="card-header one" style="background: url({{MEDIA_URL}}/{{ noticia.img }}); background-position:center center ;
+            background-repeat: no-repeat;
+            background-size:cover;" >
+            </div>
+            <div class="card-content">
+              <h1 class="card-title">{{noticia.titulo}}</h1>
+              <a href="/noticia/{{ noticia.id }}">
+                <button class="card-btn one">Leer mas</button>
+              </a>
+            </div>
+          </div>
+        </section>
+      {% endfor %}
+      </section>
+      <aside class="yuli">
+        <a href="{% url 'proyectos'%}" class="container-proyecto">
+          <p class="proyecto">Proyectos</p>
+          <div class="prueba"></div>
+        </a>
+        <div class="anundon">
+          <div class="txtdon">
+            <div id="cora"></div>
+            <h5>Con tu donación, nos ayudarás a beneficiar a más jovenes.</h5>
+          </div>
+          <div class="don2"><a href="{% url 'donar' %}"><button class="don">Donar</button></a></div>
+        </div>
+      </aside>
+    </div>
+    
+{% endblock %}

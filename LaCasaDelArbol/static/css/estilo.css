@@ -1,0 +1,113 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+/*decoracion banner*/
+.content{
+    height: 13%;
+    background: linear-gradient(180deg, #FF983A 0%, #FFAB2E 0.01%, #E98021 100%);    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner{
+    width: 20vw;
+    height: 100%;
+    background-image: url(../media/persona.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: soft-light;
+}
+
+.content h2{
+    font-weight: 800;
+    font-size: 2.8em;
+    line-height: 116.5%;
+    color: #fafafa;
+    padding-top: .8vw;
+    padding-left: 3.6vw;
+}
+/*final Banner*/
+body{
+    height: 100vh;
+}
+.cuerpo{
+    display: flex;
+    padding: 25px;
+    min-width: 250px;
+}
+.medios{
+    margin-left: 200px;
+    justify-content: center;
+
+
+}
+/*inicio formulario*/
+.form-flex{
+    margin-left: 50px;
+    justify-content: center;
+}
+.forminput{
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background: #ffeba9;
+    padding: 19px;
+    border-radius: 15px;
+    margin: 10px 0;
+    width: 500px;
+}
+.form textarea{
+    min-height: 120px ;
+}
+.enviar{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: none;
+    background: #FF983A;
+    padding: 19px;
+    border-radius: 15px;
+    margin: 10px 0;
+    width: 535px;
+}
+/*final formulario*/
+/*RESPONSIVE*/
+@media screen and (max-width: 800px){
+    .form-flex{
+        margin-left: 0;
+        justify-content: center;
+    }
+    .forminput{
+        font-family: 'Montserrat', sans-serif;
+        border: none;
+        background: #ffeba9;
+        padding: 19px;
+        border-radius: 15px;
+        margin: 3px 0;
+        width: 250px;
+    }
+    .form textarea{
+        min-height: 120px ;
+    }
+    .enviar{
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        border: none;
+        background:  #FF983A;
+        padding: 19px;
+        border-radius: 15px;
+        margin: 3px 0;
+        width: 285px;
+    }
+    .cuerpo{
+        display: block;
+        padding: 25px;
+        min-width: 250px;
+    }
+    .medios{
+        margin-left: 0;
+        justify-content: center;
+    
+    
+    }
+}

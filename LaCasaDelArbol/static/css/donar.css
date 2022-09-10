@@ -1,0 +1,126 @@
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+/*decoracion banner*/
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    width: 100vw;
+    height: 12vh;
+    background: linear-gradient(180deg, #FF983A 0%, #FFAB2E 0.01%, #E98021 100%);    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner{
+    width: 40vw;
+    height: 100%;
+    background-image: url(../media/pngwin.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    mix-blend-mode: soft-light;
+}
+
+.content h2{
+    font-weight: 800;
+    font-size: 2.8em;
+    line-height: 116.5%;
+    color: #fafafa;
+    padding-top: .8vw;
+    padding-left: 3.6vw;
+}
+/*final Banner*/
+body{
+    height: 81vh;
+}
+/*primer parrafo ayudar*/
+
+h3{
+    color: #f98012;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*final primer parrafo ayudar*/
+/*inicio cuadros donar*/
+
+.cuadrosdonar {
+    display: grid;
+    width: 80vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+
+/*final cuadros donar*/
+
+    
+
+
+=======
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+
+/*final Banner*/
+body{
+    height: 81vh;
+}
+/*primer parrafo ayudar*/
+.primerparrafo{
+    text-align: center;
+    padding: 10px 45px;
+}
+h3{
+    color: #f98012;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*final primer parrafo ayudar*/
+/*inicio cuadros donar*/
+
+
+.cuadro {
+    width: 90%;
+    padding: 11px;
+    border: solid #f98012;
+    border-radius: 4px;
+    background-color: #f98012;
+    margin: 10px 15px;
+}
+.link{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight:500 ;
+}
+/*final cuadros donar*/
+/*segundo parrafo*/
+.segundoparrafo{
+    text-align: center;
+    padding: 50px;
+    font-size: 1em;
+}
+@media (max-width: 700px){
+    
+    .cuadrosdonar{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media (max-width: 500px){
+    
+}
+
+
+
+

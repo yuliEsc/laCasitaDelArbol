@@ -141,8 +141,6 @@ LOGIN_REDIRECT_URL = '/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-import django_heroku
-django_heroku.settings(locals())
 
 #configuracion email
 EMAIL_BACKEND= 'django.core.backends.smtp.Email.Backend'
@@ -151,3 +149,6 @@ EMAIL_USE_STARTTLS= True
 EMAIL_PORT=587
 EMAIL_HOST_USER="casita.arbol@hotmail.com"
 EMAIL_HOST_PASSWORD="grupo7info"
+
+import django_heroku
+django_heroku.settings(locals())

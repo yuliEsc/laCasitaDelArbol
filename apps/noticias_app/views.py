@@ -12,7 +12,7 @@ def proyectos(request):
     return render(request, 'proyectos.html')
 
 def donar(request):
-    return render(request, 'donar.html')
+    return render(request, 'donacion.html')
 
 def index(request):
     

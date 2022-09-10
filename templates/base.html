@@ -73,7 +73,7 @@
                         <li><a class="menu__item" href="{% url 'proyectos'%}">Proyectos</a></li>
                         <li><a class="menu__item" href="{% url 'notices' %}">Novedades</a></li>
                         <li><a class="menu__item" href="{% url 'contacto' %}">Contacto</a></li>
-                        <li><a class="menu__item" href="{% url 'donar' %}">Donar</a></li>
+                        <li><a class="menu__item" href="{% url 'donaciones' %}">Donar</a></li>
                         {% if user.is_authenticated %}
                         <li><a class="menu__item" href="{% url 'logout' %}">Cerrar sesión</a></li>
                         {% else %}

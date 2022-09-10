@@ -319,3 +319,12 @@ span::after {
   
 #touch {position: absolute; opacity: 0; height: 0px;}    
 #touch:checked + .slide {height: auto;}
+
+@media (max-width:780px){
+    .cuerpo{
+        flex-direction: column;
+    }
+    .txtdon{
+        width: 100%;
+    }
+}

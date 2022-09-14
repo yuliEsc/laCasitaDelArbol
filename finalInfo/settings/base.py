@@ -147,7 +147,7 @@ EMAIL_BACKEND= 'django.core.backends.smtp.Email.Backend'
 EMAIL_HOST="smtp.office365.com"
 EMAIL_USE_STARTTLS= True
 EMAIL_PORT=587
-EMAIL_HOST_USER="casita.arbol@hotmail.com"
+EMAIL_HOST_USER="lacasita_arbol@hotmail.com"
 EMAIL_HOST_PASSWORD="grupo7info"
 
 import django_heroku

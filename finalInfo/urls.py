@@ -22,5 +22,5 @@ urlpatterns = [
     path('logout', LogoutView.as_view(template_name='perfiles/logout.html'), name='logout'),
     path('categoria/<int:id>', viewsNotice.categoriaDetail, name='Categoria'),
     path('proyectos', viewsNotice.proyectos, name='proyectos'),
-    path('donar', viewsNotice.donar, name='donar'),
+    path('dona', viewsNotice.don, name='don'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT, show_indexes=True) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT, show_indexes=True)

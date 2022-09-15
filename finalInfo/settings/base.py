@@ -143,7 +143,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 #configuracion email
-EMAIL_BACKEND= 'django.core.backends.smtp.Email.Backend'
+EMAIL_BACKEND= 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST="smtp.office365.com"
 EMAIL_USE_STARTTLS= True
 EMAIL_PORT=587
